@@ -1,0 +1,29 @@
+# Configure jinja2 defaults to make syntax highlighters lives easier
+_templates_suffix: .jinja
+_envops:
+  block_end_string: "%}"
+  block_start_string: "{%"
+  comment_end_string: "#}"
+  comment_start_string: "{#"
+  keep_trailing_newline: true
+  variable_end_string: "}}"
+  variable_start_string: "{{"
+
+odoo_admin_password:
+  secret: true
+  default: example-admin-password
+  type: str
+  help: >-
+    💡 To auto-generate strong passwords, see https://ddg.gg/?q=password+64+strong
+
+    ⚠️ This password is critical for security, especially if you have set odoo_listdb to
+    true, so keep it safe.
+
+    What will be your odoo admin password?
+
+postgres_password:
+  secret: true
+  default: example-db-password
+  type: str
+  help: >-
+    What will be your postgres user password?
