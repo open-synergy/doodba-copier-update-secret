@@ -9,6 +9,21 @@ _envops:
   variable_end_string: "}}"
   variable_start_string: "{{"
 
+# Other Copier configurations
+_exclude:
+  - /.git
+  - /.github
+  - /.gitmodules
+  - /**.pyc
+  - /**.pyo
+  - /CONTRIBUTING.md
+  - /copier.yml
+  - /poetry.lock
+  - /pyproject.toml
+  - /.pre-commit-config.yaml
+  - /.prettierrc.yml
+  - /README.md
+
 odoo_admin_password:
   secret: true
   default: example-admin-password
